@@ -20,6 +20,7 @@ if __name__ == '__main__':
     medal_sizes = [male_medals, female_medals]
 
     # Plot
+    plt.style.use('ggplot')
     fig, (ax1, ax2) = plt.subplots(1, 2)
 
     ax1.pie(sizes, explode=explode, labels=labels, autopct='%1.1f%%',
