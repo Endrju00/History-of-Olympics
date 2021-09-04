@@ -13,13 +13,13 @@ def plot_dual(labels, short, rest, title):
 
     # Add some text for labels, title and custom x-axis tick labels, etc.
     ax.set_ylabel('Number of participants')
-    ax.set_title(title)
+    ax.set_title(title, fontsize=16)
     ax.set_xticks(x)
-    ax.set_xticklabels(labels)
-    ax.legend()
+    ax.set_xticklabels(labels, fontsize=14)
+    ax.legend(fontsize=15)
 
-    ax.bar_label(rects1, padding=3)
-    ax.bar_label(rects2, padding=3)
+    ax.bar_label(rects1, padding=3, fontsize=15)
+    ax.bar_label(rects2, padding=3, fontsize=15)
 
     fig.tight_layout()
     plt.show()

@@ -46,12 +46,12 @@ if __name__ == '__main__':
 
     ax1.set_title("Height and number of medals won by men comparision.",
             fontsize=16)
-    ax1.set_xlabel("Height")
-    ax1.set_ylabel("Number of medals won")
+    ax1.set_xlabel("Height", fontsize= 15)
+    ax1.set_ylabel("Number of medals won", fontsize= 15)
 
     ax2.set_title("Height and number of medals won by women comparision.",
             fontsize=16)
-    ax2.set_xlabel("Height")
-    ax2.set_ylabel("Number of medals won")
+    ax2.set_xlabel("Height", fontsize= 15)
+    ax2.set_ylabel("Number of medals won", fontsize= 15)
 
     plt.show()

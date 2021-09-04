@@ -17,6 +17,6 @@ if __name__ == '__main__':
     ax1.bar([x[0] for x in data], [x[1] for x in data])
 
     ax1.set_title("Age and number of medals won comparision.", fontsize=16)
-    plt.xlabel("Age")
-    plt.ylabel("Number of medals won")
+    plt.xlabel("Age", fontsize= 15)
+    plt.ylabel("Number of medals won", fontsize= 15)
     plt.show()
