@@ -34,9 +34,14 @@ if __name__ == '__main__':
     # Plot
     plt.style.use('seaborn-darkgrid')
     fig, (ax1, ax2, ax3) = plt.subplots(1, 3)
-    ax1.bar([x[0] for x in top_4_timespan], [x[1] for x in top_4_timespan])
-    ax2.bar([y[0] for y in top_4_20], [y[1] for y in top_4_20])
-    ax3.bar([z[0] for z in top_4_10], [z[1] for z in top_4_10])
+
+    colors = ['#023e8a', '#0077b6', '#00b4d8', '#48cae4']
+    ax1.bar([x[0] for x in top_4_timespan], [x[1] for x in top_4_timespan],
+            color=colors)
+    ax2.bar([y[0] for y in top_4_20], [y[1] for y in top_4_20],
+            color=colors)
+    ax3.bar([z[0] for z in top_4_10], [z[1] for z in top_4_10],
+            color=colors)
 
     ax1.set_xlabel("Countries")
     ax1.set_ylabel("Number of medals won")
