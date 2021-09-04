@@ -4,7 +4,6 @@ import matplotlib.pyplot as plt
 
 if __name__ == '__main__':
     athlete_events = pd.read_csv('athlete_events.csv')
-    labels = ('Male', 'Female')
     athlete_events_edited = athlete_events.drop_duplicates('ID') # to count gender the objects have to be unique
 
     male = athlete_events[athlete_events['Sex'] == 'M']
@@ -24,6 +23,7 @@ if __name__ == '__main__':
     plt.style.use('ggplot')
     fig, (ax1, ax2) = plt.subplots(1, 2)
     explode = (0, 0.1)
+    labels = ('Male', 'Female')
 
     ax1.pie(sizes, explode=explode, labels=labels, autopct='%1.1f%%',
             shadow=True, startangle=90)
