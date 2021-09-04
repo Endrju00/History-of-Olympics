@@ -38,8 +38,14 @@ if __name__ == '__main__':
     ax2.bar([y[0] for y in top_4_20], [y[1] for y in top_4_20])
     ax3.bar([z[0] for z in top_4_10], [z[1] for z in top_4_10])
 
+    ax1.set_xlabel("Countries")
+    ax1.set_ylabel("Number of medals won")
     ax1.set_title("Top four medal winners of all time.", fontsize=15)
+    ax2.set_xlabel("Countries")
+    ax2.set_ylabel("Number of medals won")
     ax2.set_title("Top four medal winners of the past 20 years.", fontsize=15)
+    ax3.set_xlabel("Countries")
+    ax3.set_ylabel("Number of medals won")
     ax3.set_title("Top four medal winners of the past 10 years.", fontsize=15)
 
     plt.show()
