@@ -12,14 +12,15 @@ def plot_dual(labels, short, rest, title):
     rects2 = ax.bar(x + width/2, rest, width, label='The rest', color='#023e8a')
 
     # Add some text for labels, title and custom x-axis tick labels, etc.
-    ax.set_ylabel('Number of participants')
+    ax.set_xlabel('Sports', fontsize=15)
+    ax.set_ylabel('Number of participants', fontsize=15)
     ax.set_title(title, fontsize=16)
     ax.set_xticks(x)
     ax.set_xticklabels(labels, fontsize=14)
     ax.legend(fontsize=15)
 
-    ax.bar_label(rects1, padding=3, fontsize=15)
-    ax.bar_label(rects2, padding=3, fontsize=15)
+    ax.bar_label(rects1, padding=3, fontsize=14)
+    ax.bar_label(rects2, padding=3, fontsize=14)
 
     fig.tight_layout()
     plt.show()

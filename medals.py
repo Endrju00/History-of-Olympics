@@ -36,21 +36,25 @@ if __name__ == '__main__':
     fig, (ax1, ax2, ax3) = plt.subplots(1, 3)
 
     colors = ['#023e8a', '#0077b6', '#00b4d8', '#48cae4']
-    ax1.bar([x[0] for x in top_4_timespan], [x[1] for x in top_4_timespan],
+    rects1 = ax1.bar([x[0] for x in top_4_timespan], [x[1] for x in top_4_timespan],
             color=colors)
-    ax2.bar([y[0] for y in top_4_20], [y[1] for y in top_4_20],
+    rects2 = ax2.bar([y[0] for y in top_4_20], [y[1] for y in top_4_20],
             color=colors)
-    ax3.bar([z[0] for z in top_4_10], [z[1] for z in top_4_10],
+    rects3 = ax3.bar([z[0] for z in top_4_10], [z[1] for z in top_4_10],
             color=colors)
 
-    ax1.set_xlabel("Countries", fontsize=14)
-    ax1.set_ylabel("Number of medals won", fontsize=14)
+    ax1.set_xlabel("Countries", fontsize=15)
+    ax1.set_ylabel("Number of medals won", fontsize=15)
     ax1.set_title("Top four medal winners of all time.", fontsize=15)
-    ax2.set_xlabel("Countries", fontsize=14)
-    ax2.set_ylabel("Number of medals won", fontsize=14)
+    ax2.set_xlabel("Countries", fontsize=15)
+    ax2.set_ylabel("Number of medals won", fontsize=15)
     ax2.set_title("Top four medal winners of the past 20 years.", fontsize=15)
-    ax3.set_xlabel("Countries", fontsize=14)
-    ax3.set_ylabel("Number of medals won", fontsize=14)
+    ax3.set_xlabel("Countries", fontsize=15)
+    ax3.set_ylabel("Number of medals won", fontsize=15)
     ax3.set_title("Top four medal winners of the past 10 years.", fontsize=15)
+
+    ax1.bar_label(rects1, padding=3, fontsize=15)
+    ax2.bar_label(rects2, padding=3, fontsize=15)
+    ax3.bar_label(rects3, padding=3, fontsize=15)
 
     plt.show()
