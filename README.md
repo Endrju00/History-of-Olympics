@@ -46,6 +46,3 @@ https://www.kaggle.com/mysarahmadbhat/120-years-of-olympic-history
 ### 7. Family.
 ![](graphs/family.png)
 > Due to the data format, the surname had to be extracted from the "name" column. The chart above shows the number of surnames that either follow the first name or was at the end of a multi-segment surname.
-###
-![](graphs/family_different.png)
-> The chart above shows the count of single or multi-membered surnames that came after the first name. [See the script.](https://github.com/Endrju00/ONELY-Intern-tasks-data-analysis/blob/main/family.py)
