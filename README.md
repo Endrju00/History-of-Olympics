@@ -13,7 +13,6 @@ https://www.kaggle.com/mysarahmadbhat/120-years-of-olympic-history
 7. Which families (same surname) win the most medals?
 
 ### 1. Winning medals.
-<!-- Script:  -->
 ![](graphs/medals.png)
 > When it comes to winning medals, the US dominates the rest of the countries. The top 4 doesn't change much over the years and we can observe that Germany, Great Britain and Russia also win a lot of them. [See the script.](https://github.com/Endrju00/ONELY-Intern-tasks-data-analysis/blob/main/medals.py)
 
@@ -27,7 +26,7 @@ https://www.kaggle.com/mysarahmadbhat/120-years-of-olympic-history
 
 ### 4. Relation between age and medals won.
 ![](graphs/age.png)
-> Most players win medals aged 21-26. An interesting fact is that the youngest medal winner was 10 years old and he won it in 1896 in Athens. [See the script.](https://github.com/Endrju00/ONELY-Intern-tasks-data-analysis/blob/main/age.py)
+> Most players win medals aged 21-27. An interesting fact is that the youngest medal winner was 10 years old and he won it in 1896 in Athens. [See the script.](https://github.com/Endrju00/ONELY-Intern-tasks-data-analysis/blob/main/age.py)
 
 ### 5. Do tall people win more medals?
 ![](graphs/height.png)
