@@ -31,9 +31,11 @@ https://www.kaggle.com/mysarahmadbhat/120-years-of-olympic-history
 
 ### 5. Do tall people win more medals?
 ![](graphs/height.png)
-> The average height of male players is about 179cm and 168cm for women. I assumed that the tall person is 185cm as a man and 175cm as a woman. Tall people do not win more medals than others. [See the script.](https://github.com/Endrju00/ONELY-Intern-tasks-data-analysis/blob/main/height.py)
+> The average height of male players is about 179cm and 168cm for women. I assumed that the tall person is more or equal 185cm as a man and 175cm as a woman. Tall people do not win more medals than others. [See the script.](https://github.com/Endrju00/ONELY-Intern-tasks-data-analysis/blob/main/height.py)
 
 ### 6. Sport for the short.
+> Based on the above assumptions, a short person is less than 175cm as a man and 165cm as a woman.
+###
 ![](graphs/short_men.png)
 > The sports that are dominated by short men are: Gymnastic, Wrestling, Boxing, Weightlifting, Diving and Trampoling. 
 ###
