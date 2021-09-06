@@ -14,24 +14,18 @@ if __name__ == '__main__':
         d['Surname'].append(data[-1]) # get the last part of the surname
 
     df = pd.DataFrame(data=d)
-    surnames = df.drop_duplicates('Surname')['Surname']
 
-    data = []
-    for surname in surnames:
-        data.append((surname, df[df['Surname'] == surname]['Surname'].count()))
-
-    sorted_data = sorted(data, key=lambda x: x[1], reverse=True)
-    top_10 = sorted_data[1:11] # first is .Jr
-    labels = [x[0] for x in top_10]
-    values = [x[1] for x in top_10]
+    top_10 = df['Surname'].value_counts()[1:11] # first is .Jr
+    labels = [x for x in top_10.keys()]
+    values = [top_10[x] for x in top_10.keys()]
 
     # Plot
     plt.style.use('ggplot')
     fig, ax1 = plt.subplots(1, 1)
     rects = ax1.bar(labels, values, color=['#03045e', '#032174', '#023E8A', '#015BA0', '#0077B6', '#0096C7', '#00A5D0', '#00B4D8', '#48CAE4', '#6CD5EA'])
 
-    ax1.bar_label(rects, padding=3)
+    ax1.bar_label(rects, padding=3, fontsize=15)
     ax1.set_title("Most popular surnames.", fontsize=16)
-    plt.xlabel("Surnames")
-    plt.ylabel("Number of occurrences of the surname")
+    plt.xlabel("Surnames", fontsize=15)
+    plt.ylabel("Number of occurrences of the surname", fontsize=15)
     plt.show()
