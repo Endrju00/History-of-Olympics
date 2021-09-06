@@ -31,7 +31,7 @@ if __name__ == '__main__':
     # Plot
     plt.style.use('seaborn-darkgrid')
     fig, (ax1, ax2) = plt.subplots(1, 2)
-    ax1.bar(['Women (height < 175)', 'Tall women (height >= 175)'],
+    rect1 = ax1.bar(['Women (height < 175)', 'Tall women (height >= 175)'],
             [short_women, tall_women,],
             color=['#e63946', '#023e8a'])
     ax1.set_title("Height and number of medals won by women comparision.",
@@ -39,17 +39,19 @@ if __name__ == '__main__':
     ax1.set_xlabel("Height")
     ax1.set_ylabel("Number of medals won")
 
-    ax2.bar(['Men (height < 185)', 'Tall men (height >= 185)'],
+    rect2 = ax2.bar(['Men (height < 185)', 'Tall men (height >= 185)'],
             [short_men, tall_men],
             color=['#e63946', '#023e8a'])
 
+    ax1.bar_label(rect1, padding=3, fontsize=15)
+    ax2.bar_label(rect2, padding=3, fontsize=15)
 
-    ax1.set_title("Height and number of medals won by men comparision.",
+    ax1.set_title("Height and number of medals won by women comparision.",
             fontsize=16)
     ax1.set_xlabel("Height", fontsize= 15)
     ax1.set_ylabel("Number of medals won", fontsize= 15)
 
-    ax2.set_title("Height and number of medals won by women comparision.",
+    ax2.set_title("Height and number of medals won by men comparision.",
             fontsize=16)
     ax2.set_xlabel("Height", fontsize= 15)
     ax2.set_ylabel("Number of medals won", fontsize= 15)
