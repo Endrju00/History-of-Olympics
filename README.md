@@ -1,4 +1,4 @@
-# ONELY-Intern-tasks-data-analysis
+# 120 Years of Olympics data analysis
 We would like to analyze the dataset containing information about the Olympics.
 ### The dataset is available here:
 https://www.kaggle.com/mysarahmadbhat/120-years-of-olympic-history
